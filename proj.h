@@ -4,6 +4,7 @@
 #ifndef PROJ_H
 #define PROJ_H
 
+// Definição da estrutura Cliente
 typedef struct {
     char nome[50];
     char cpf[12];
@@ -11,7 +12,7 @@ typedef struct {
     float saldo;
     char senha[20];
 } Cliente;
-
+// Definição da estrutura Operacao
 typedef struct {
     char cpf[12];
     char tipo_operacao[20];
