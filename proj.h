@@ -1,7 +1,3 @@
-//
-// Created by unifmatholiveira on 27/09/2023.
-//
-
 #ifndef UNTITLED1_PROJ_H
 #define UNTITLED1_PROJ_H
 #ifndef PROJ_H
