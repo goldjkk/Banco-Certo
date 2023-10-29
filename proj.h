@@ -2,6 +2,10 @@
 #define UNTITLED1_PROJ_H
 #ifndef PROJ_H
 #define PROJ_H
+
+=======
+
+
 // Definição da estrutura Cliente
 typedef struct {
     char nome[50];
