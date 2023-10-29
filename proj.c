@@ -1,3 +1,9 @@
+
+
+
+#include <stdio.h>
+#include "proj.h"
+
 #include <stdio.h>
 #include "proj.h"
 
@@ -170,7 +176,6 @@ void Deposito(Cliente clientes[], int numClientes, Operacao operacoes[], int *nu
 }
 
 
-
 // Função para gerar um extrato bancário
 void Extrato(Cliente clientes[], int numClientes, Operacao operacoes[], int numOperacoes) {
     char cpf[12];
@@ -220,6 +225,7 @@ void Extrato(Cliente clientes[], int numClientes, Operacao operacoes[], int numO
         printf("CPF ou senha incorretos ou cliente nao encontrado.\n");
     }
 }
+
 
 
 
@@ -285,24 +291,6 @@ void Transferencia(Cliente clientes[], int numClientes, Operacao operacoes[], in
                 clientes[indiceDestino].saldo += valor;
                 printf("Transferencia realizada com sucesso.\n");
 
-                // Registre as operações
-                copiarString(operacoes[*numOperacoes].cpf, cpfOrigem);
-                copiarString(operacoes[*numOperacoes].tipo_operacao, "Transferencia (saída)");
-                operacoes[*numOperacoes].valor = valor;
-                (*numOperacoes)++;
-                copiarString(operacoes[*numOperacoes].cpf, cpfDestino);
-                copiarString(operacoes[*numOperacoes].tipo_operacao, "Transferencia (entrada)");
-                operacoes[*numOperacoes].valor = valor;
-                (*numOperacoes)++;
-            } else {
-                printf("Saldo insuficiente para realizar a transferencia.\n");
-            }
-        } else {
-            printf("Tipo de conta de origem invaalido.\n");
-        }
-    } else {
-        printf("CPF ou senha incorretos ou clientes nao encontrados.\n");
-    }
-}
+
 
 
