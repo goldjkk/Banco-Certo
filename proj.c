@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include "proj.h"
 
-#include <stdio.h>
-#include "proj.h"
+
 
 
 // Função para comparar duas strings
