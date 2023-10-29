@@ -53,6 +53,7 @@ void Novo_Cliente(Cliente clientes[], int *numClientes) {
     }
 }
 
+
 // Função para apagar um cliente pelo CPF
 void Apagar_Cliente(Cliente clientes[], int *numClientes) {
     char cpf[12];
@@ -74,6 +75,7 @@ void Apagar_Cliente(Cliente clientes[], int *numClientes) {
 
     printf("Cliente nao encontrado.\n");
 }
+
 
 
 // Função para listar todos os clientes
@@ -288,6 +290,7 @@ void Transferencia(Cliente clientes[], int numClientes, Operacao operacoes[], in
                 clientes[indiceOrigem].saldo -= valor;
                 clientes[indiceDestino].saldo += valor;
                 printf("Transferencia realizada com sucesso.\n");
+
 
 
 

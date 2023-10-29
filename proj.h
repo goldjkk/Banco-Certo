@@ -3,6 +3,10 @@
 #ifndef PROJ_H
 #define PROJ_H
 
+
+
+
+
 // Definição da estrutura Cliente
 typedef struct {
     char nome[50];
@@ -19,8 +23,11 @@ typedef struct {
 } Operacao;
 
 
+void Apagar_Cliente(Cliente clientes[], int *numClientes);
+
 void Extrato(Cliente clientes[], int numClientes, Operacao operacoes[], int numOperacoes);
 void Transferencia(Cliente clientes[], int numClientes, Operacao operacoes[], int *numOperacoes);
+
 
 #endif
 
