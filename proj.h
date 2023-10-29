@@ -1,9 +1,12 @@
-
-
 #ifndef UNTITLED1_PROJ_H
 #define UNTITLED1_PROJ_H
 #ifndef PROJ_H
 #define PROJ_H
+
+
+
+
+
 
 // Definição da estrutura Cliente
 typedef struct {
@@ -20,7 +23,14 @@ typedef struct {
     float valor;
 } Operacao;
 
+
 void Listar_clientes(Cliente clientes[], int numClientes);
+
+
+void Apagar_Cliente(Cliente clientes[], int *numClientes);
+
+void Extrato(Cliente clientes[], int numClientes, Operacao operacoes[], int numOperacoes);
+void Transferencia(Cliente clientes[], int numClientes, Operacao operacoes[], int *numOperacoes);
 
 #endif
 
