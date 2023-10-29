@@ -1,3 +1,7 @@
+
+#include <stdio.h>
+#include "proj.h"
+
 #include <stdio.h>
 #include "proj.h"
 
@@ -12,16 +16,6 @@ int compararStrings(const char *str1, const char *str2) {
         i++;
     }
     return (str1[i] == '\0' && str2[i] == '\0');
-}
-
-// Função para copiar uma string para outra
-void copiarString(char *destino, const char *origem) {
-    int i = 0;
-    while (origem[i] != '\0') {
-        destino[i] = origem[i];
-        i++;
-    }
-    destino[i] = '\0';
 }
 
 // Função para adicionar um novo cliente
