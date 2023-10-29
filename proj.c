@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "proj.h"
 
+
 // Função para comparar duas strings
 int compararStrings(const char *str1, const char *str2) {
     int i = 0;
@@ -220,7 +221,7 @@ void Extrato(Cliente clientes[], int numClientes, Operacao operacoes[], int numO
 
 
 
-// Função para realizar uma transferência entre contas
+
 void Transferencia(Cliente clientes[], int numClientes, Operacao operacoes[], int *numOperacoes) {
     char cpfOrigem[12];
     char senhaOrigem[20];
