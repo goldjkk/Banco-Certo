@@ -140,8 +140,6 @@ void Debito(Cliente clientes[], int numClientes, Operacao operacoes[], int *numO
 
 
 
-
-
 // Função para realizar um depósito na conta de um cliente
 void Deposito(Cliente clientes[], int numClientes, Operacao operacoes[], int *numOperacoes) {
     char cpf[12];
@@ -170,6 +168,7 @@ void Deposito(Cliente clientes[], int numClientes, Operacao operacoes[], int *nu
         printf("Cliente naao encontrado.\n");
     }
 }
+
 
 
 // Função para gerar um extrato bancário

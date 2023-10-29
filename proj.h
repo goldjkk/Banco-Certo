@@ -1,3 +1,4 @@
+
 #ifndef UNTITLED1_PROJ_H
 #define UNTITLED1_PROJ_H
 #ifndef PROJ_H
@@ -22,6 +23,9 @@ typedef struct {
     char tipo_operacao[20];
     float valor;
 } Operacao;
+
+
+void Deposito(Cliente clientes[], int numClientes, Operacao operacoes[], int *numOperacoes);
 
 
 void Listar_clientes(Cliente clientes[], int numClientes);
