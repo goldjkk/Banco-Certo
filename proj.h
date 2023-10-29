@@ -1,8 +1,8 @@
-
 #ifndef UNTITLED1_PROJ_H
 #define UNTITLED1_PROJ_H
 #ifndef PROJ_H
 #define PROJ_H
+
 
 // Definição da estrutura Cliente
 typedef struct {
@@ -18,6 +18,7 @@ typedef struct {
     char tipo_operacao[20];
     float valor;
 } Operacao;
+
 
 void Apagar_Cliente(Cliente clientes[], int *numClientes);
 
