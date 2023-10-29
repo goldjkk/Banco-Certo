@@ -19,6 +19,7 @@ typedef struct {
     float valor;
 } Operacao;
 
+
 void Novo_Cliente(Cliente clientes[], int *numClientes);
 #endif
 
