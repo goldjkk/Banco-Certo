@@ -1,9 +1,3 @@
-
-
-
-#include <stdio.h>
-#include "proj.h"
-
 #include <stdio.h>
 #include "proj.h"
 
@@ -78,6 +72,7 @@ void Apagar_Cliente(Cliente clientes[], int *numClientes) {
 
 
 
+
 // Função para listar todos os clientes
 void Listar_clientes(Cliente clientes[], int numClientes) {
     printf("Lista de Clientes:\n");
@@ -89,6 +84,7 @@ void Listar_clientes(Cliente clientes[], int numClientes) {
         printf("\n");
     }
 }
+
 
 
 // Função para realizar um débito na conta de um cliente
@@ -290,7 +286,3 @@ void Transferencia(Cliente clientes[], int numClientes, Operacao operacoes[], in
                 clientes[indiceOrigem].saldo -= valor;
                 clientes[indiceDestino].saldo += valor;
                 printf("Transferencia realizada com sucesso.\n");
-
-
-
-
