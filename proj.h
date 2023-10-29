@@ -1,7 +1,3 @@
-//
-// Created by unifmatholiveira on 27/09/2023.
-//
-
 #ifndef UNTITLED1_PROJ_H
 #define UNTITLED1_PROJ_H
 #ifndef PROJ_H
@@ -21,14 +17,7 @@ typedef struct {
     float valor;
 } Operacao;
 
-void Novo_Cliente(Cliente clientes[], int *numClientes);
-void Apagar_Cliente(Cliente clientes[], int *numClientes);
-void Listar_clientes(Cliente clientes[], int numClientes);
-void Debito(Cliente clientes[], int numClientes, Operacao operacoes[], int *numOperacoes);
-void Deposito(Cliente clientes[], int numClientes, Operacao operacoes[], int *numOperacoes);
 void Extrato(Cliente clientes[], int numClientes, Operacao operacoes[], int numOperacoes);
-void Transferencia(Cliente clientes[], int numClientes, Operacao operacoes[], int *numOperacoes);
-
 #endif
 
 #endif //UNTITLED1_PROJ_H
